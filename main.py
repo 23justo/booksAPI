@@ -8,8 +8,28 @@ from enum import Enum
 from sqlalchemy.orm import Session
 from typing import Annotated
 from database import engine, SessionLocal
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+origins = [
+    "http://localhost.tiangolo.com",
+    "https://localhost.tiangolo.com",
+    "http://localhost",
+    "http://localhost:8080",
+    "https://blonde-lissy-justo-1382e3ae.koyeb.app"
+
+
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
 models.Base.metadata.create_all(bind=engine)
 
 def get_db():
