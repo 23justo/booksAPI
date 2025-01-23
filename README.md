@@ -11,6 +11,8 @@ Build Dockerfile<br/>
 ```docker run -d -p 8000:80 fastapiBooks```<br/>
 Now you can go to localhost:8000/docs and you should be able to see the api swagger docs.<br/>
 
+![image](https://github.com/user-attachments/assets/c711c59a-6412-4bd1-a75a-b5b23346d528)
+
 
 Run tests<br/>
 Position yourself in the root folder of the api and run.<br/>
