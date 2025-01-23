@@ -17,6 +17,6 @@ Now you can go to localhost:8000/docs and you should be able to see the api swag
 Run tests<br/>
 Position yourself in the root folder of the api and run.<br/>
 ```pytest```<br/>
-
+To check the testing code you can go [here](https://github.com/23justo/booksAPI/blob/main/test/test_books.py)
 
 If you want to check the live version of the  API you can check [here](https://blonde-lissy-justo-1382e3ae.koyeb.app/docs)<br/>
